@@ -15,7 +15,7 @@ document.getElementById("meuFormulario").addEventListener("submit", function(eve
         descricao: descricao
     };
   
-    fetch('https://crudcrud.com/api/90f8c85c6fed430893330490c8808c79/dados', {
+    fetch('Sua chave/dados', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -34,7 +34,7 @@ document.getElementById("meuFormulario").addEventListener("submit", function(eve
   });
   
   function atualizarTabela() {
-    fetch('https://crudcrud.com/api/90f8c85c6fed430893330490c8808c79/dados')
+    fetch('Sua chave/dados')
     .then(response => response.json())
     .then(data => {
       var tabela = document.querySelector('#tabelaDados tbody');
