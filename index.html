@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Atividade Ada</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <div class="container">
+        <form id ="meuFormulario">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required minlength="3">
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha" required minlength="3" maxlength="20">
+        
+            <label for="idade">Idade:</label>
+            <input type="number" id="idade" name="idade" required min="1" max="120">
+        
+            <label for="descricao">Descrição:</label>
+            <textarea id="descricao" name="descricao" maxlength="300"></textarea>
+        
+            <button type="submit">Enviar</button>
+          </form>
+
+          <table id="tabelaDados">
+            <thead>
+              <tr>
+                <th>Nome</th>
+                <th>Email</th>
+                <th>Senha</th>
+                <th>Idade</th>
+                <th>Descrição</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- Os dados serão inseridos aqui pelo JavaScript -->
+            </tbody>
+          </table>
+    </div>
+  
+    <script src="script.js"></script>
+</body>
+
+</html>
